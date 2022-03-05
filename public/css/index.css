@@ -1,0 +1,93 @@
+.hot-title {
+  height: 60px;
+  line-height: 60px;
+  margin-bottom: 10px;
+  color: #ff5f5f;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  border-bottom: 2px solid#FF5F5F;
+}
+.hot-product li {
+  float: left;
+  width: 33.3333%;
+  padding: 0 5px;
+  margin-bottom: 10px;
+}
+.hot-product li:hover .hot-buy-btn {
+  opacity: 1;
+}
+.product {
+  overflow: hidden;
+}
+.product img {
+  width: 100%;
+  transition: all 0.4s;
+}
+.product a:hover img {
+  transform: scale(1.1);
+}
+.intro {
+  margin-top: 5px;
+}
+.intro p {
+  text-align: center;
+  font-weight: 700;
+}
+.intro p:nth-child(2) {
+  color: #787878;
+}
+.hot-buy-btn {
+  width: 100%;
+  height: 50px;
+  background-color: #d68b00;
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+  font-weight: 900;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.hot-buy-btn a {
+  color: #fff;
+}
+.hot-buy-btn a:hover {
+  color: #ccc;
+}
+.mo-hot-buy-btn {
+  width: 100%;
+  height: 50px;
+  background-color: #d68b00;
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+  font-weight: 900;
+  border-radius: 5px;
+}
+.mo-hot-buy-btn a {
+  color: #fff;
+}
+
+@media (max-width: 1399.98px) {
+}
+@media (max-width: 1199.98px) {
+}
+@media (max-width: 991.98px) {
+}
+@media (max-width: 767.98px) {
+  .hot-product li {
+    width: 49.99%;
+  }
+}
+@media (max-width: 575.98px) {
+  .hot-product ul {
+    padding: 0;
+  }
+  .hot-product li {
+    width: 100%;
+    padding: 5px;
+    border: 2px solid #9e9e00;
+    border-radius: 5px;
+  }
+}

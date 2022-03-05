@@ -1,0 +1,64 @@
+main {
+  margin: 10px 0;
+}
+.personal {
+  margin: 10px 0;
+  background-color: skyblue;
+  border-radius: 5px;
+}
+.left-side {
+  height: 150px;
+  margin: 10px 0;
+  border-right: 1px solid #ccc;
+}
+.right-side {
+  position: relative;
+  height: 150px;
+  margin: 10px 0;
+}
+#logout {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.order {
+  padding: 0;
+  margin: 10px 0;
+}
+th {
+  text-align: center;
+  background-color: #ccc;
+}
+td {
+  text-align: center;
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+}
+.mo-order div:nth-child(2n + 1) {
+  padding-left: 5px;
+  background-color: #ccc;
+}
+.mo-order div:nth-child(2n) {
+  padding-left: 5px;
+  background-color: #F0F0F0;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+@media (max-width: 1399.98px) {
+}
+@media (max-width: 1199.98px) {
+}
+@media (max-width: 991.98px) {
+}
+@media (max-width: 767.98px) {
+}
+@media (max-width: 575.98px) {
+  .footer {
+    position: static;
+  }
+}

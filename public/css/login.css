@@ -1,0 +1,101 @@
+.login-area {
+  background-color: #d9d9d9;
+  padding-bottom: 50px;
+  margin: 10px 0;
+  box-shadow: 6px 8px 8px rgba(155, 155, 155, 0.5);
+}
+.warning-area {
+  text-align: center;
+}
+.warning-area h4 {
+  display: inline-block;
+  margin: 0;
+}
+#warning {
+  color: #e60000;
+  font-size: 24px;
+  /* margin-right: 10px; */
+}
+#accTip,
+#pasTip {
+  color: #e60000;
+}
+.account-area,
+.password-area {
+  margin: 0 auto;
+  width: 500px;
+  margin-bottom: 15px;
+}
+.account-area h6,
+.password-area h6,
+.warning-area h4 {
+  text-align: left;
+  font-family: Arial, sans-serif, "標楷體", "Microsoft JhengHei", "微軟正黑體";
+}
+.w3-input {
+  width: 500px;
+  outline: none;
+}
+.btn-area {
+  margin: 0 auto;
+  width: 500px;
+}
+#loginBtn,
+#registerBtn {
+  width: 225px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  color: #6e6e6e;
+  border: none;
+  border-radius: 5px;
+}
+#loginBtn {
+  float: left;
+  background-color: #d9b300;
+}
+#registerBtn {
+  float: right;
+  background-color: #ff8000;
+}
+#loginBtn:hover,
+#registerBtn:hover {
+  color: #fff;
+  background-color: #ffb01c;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+@media (max-width: 1399.98px) {
+}
+@media (max-width: 1199.98px) {
+}
+@media (max-width: 991.98px) {
+}
+@media (max-width: 767.98px) {
+}
+@media (max-width: 575.98px) {
+  .footer {
+    position: static;
+  }
+  .account-area,
+  .password-area {
+    width: 100%;
+  }
+  .w3-input {
+    width: 100%;
+  }
+  .btn-area {
+    width: 100%;
+  }
+  #loginBtn,
+  #registerBtn {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+  }
+}

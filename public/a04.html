@@ -1,0 +1,324 @@
+<script src="/login/status"></script>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- ★共用區域開始 -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <!-- 引入bootstrap樣式 -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <!-- 引入共用的樣式 -->
+    <link rel="stylesheet" href="css/common.css" />
+    <!-- 引入bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <!-- ★共用區域結束 -->
+    <!-- 引入商品詳細頁的共用樣式 -->
+    <link rel="stylesheet" href="css/productGroup.css" />
+    <title>四季豐收壺 櫻花粉 | 茶空間</title>
+  </head>
+  <body>
+    <!-- ★共用區域開始 -->
+    <!-- 頭部區域 -->
+    <header class="sticky-top">
+      <div class="topbar">
+        <!-- 頂部區域 -->
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6 col-6">
+              <div class="logo">
+                <img src="images/logo.png" alt="" />
+              </div>
+            </div>
+            <div class="col-sm-3 col-6">
+              <div class="login">
+                <a href="javascript:;">
+                  <i class="bi bi-person"></i>
+                  <h6 id="loginName"></h6>
+                </a>
+              </div>
+              <div class="shopcar">
+                <a href="cart.html"><i class="bi bi-cart3"></i></a>
+                <em class="car-count">0</em>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 導航欄 -->
+      <nav class="navbar navbar-expand-sm navbar-light">
+        <div class="container-fluid topconainer">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse topnav"
+            id="navbarSupportedContent"
+          >
+            <div class="container">
+              <div class="row">
+                <ul class="navbar-nav topnav-nav">
+                  <li><a href="index.html">首頁</a></li>
+                  <li><a href="product.html">商品</a></li>
+                  <li><a href="aboutus.html">關於我們</a></li>
+                  <li><a href="contact.html">聯絡</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- ★共用區域結束 -->
+    <!-- 商品詳細頁面開始 -->
+    <div class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-1 col-lg-2"></div>
+          <div class="col-md-6 col-lg-5">
+            <div
+              id="carouselExampleControls"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="upload/product/fourSeason-typeA/fourSeason-typeA-1.jpg"
+                    class="d-block w-100"
+                    alt=""
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="upload/product/fourSeason-typeA/fourSeason-typeA-2.jpg"
+                    class="d-block w-100"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <div class="row row-cols-1">
+              <div class="col">
+                <div class="det">
+                  <h3></h3>
+                  <h6 class="d-none d-sm-block">
+                    鑄造是將鐵水倒入模具中的製造方法，鍋、鐵壺、花器等主要被指定為傳統工藝品，主要使用鍋、風鈴等批量生產的物品。
+                  </h6>
+                  <p></p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="ctrl-num">
+                  <div class="minus">
+                    <i id="minus" class="bi bi-dash"></i>
+                  </div>
+                  <input type="number" value="1" />
+                  <div class="plus">
+                    <i id="plus" class="bi bi-plus"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <button class="addToCart-btn btn btn-info">加入購物車</button>
+                <button type="button" class="btn btn-warning">立即購買</button>
+              </div>
+              <!-- 用於顯示打勾動畫 -->
+              <div class="tickcover disappear">
+                <div class="tickarea disappear">
+                  <img src="" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-1 col-lg-2"></div>
+        </div>
+      </div>
+    </div>
+    <div class="info">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-1 col-lg-2"></div>
+          <div class="col-12 col-md-10 col-lg-8">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="detail-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#detail"
+                  type="button"
+                  role="tab"
+                  aria-controls="detail"
+                  aria-selected="true"
+                >
+                  商品介紹
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="spec-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#spec"
+                  type="button"
+                  role="tab"
+                  aria-controls="spec"
+                  aria-selected="false"
+                >
+                  規格說明
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="process-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#process"
+                  type="button"
+                  role="tab"
+                  aria-controls="process"
+                  aria-selected="false"
+                >
+                  訂製天數
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="detail"
+                role="tabpanel"
+                aria-labelledby="detail-tab"
+              >
+                <div class="pro_img">
+                  <h3>起源</h3>
+                  <span>
+                    在日本被指定為傳統工藝品的南部鐵器，是以盛岡市為中心的地區，以及距離盛岡市區約60公里南部的奧州市水澤區為主所生產的鑄鐵製品，稱為南部鐵器。
+                    以盛岡市為中心原屬於在江戶時代治理過的南部籓，歷代籓主把茶湯釜和鐵壺作為重要的工藝製品，從京都及甲州招聘了很多具有高超手藝的工匠，南部鐵器中的『南部』便由此而來，並沿用至今。
+                    另一方面以奧州市水澤區為發源的鐵器文化，始於平安時代，據說奧州藤原氏的祖先藤原清衡從近江國招聘鑄物師，以製作兵器、佛具開始，之後發展到製作鐵鋤等農器具及日常用品茶壺等而興盛起。江戶時期水澤的伊達籓（又稱仙台藩）與盛岡的南部籓有了不同的政治區分，於昭和時代統一稱為南部鐵器。
+                    因岩手有著得天獨厚的優質鐵礦資源及工匠們精湛的工藝技法，南部鐵器就成為當地特產，名流間交流的貴重禮品。
+                  </span>
+                  <img src="upload/sample.jpg" alt="" />
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="spec"
+                role="tabpanel"
+                aria-labelledby="spec-tab"
+              >
+                <div class="sepc">容量：120ml 高：8.2cm 口徑：5cm</div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="process"
+                role="tabpanel"
+                aria-labelledby="process-tab"
+              >
+                <div class="process">...</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-1 col-lg-2"></div>
+        </div>
+      </div>
+    </div>
+    <!-- 商品詳細頁面結束 -->
+    <!-- ★共用區域開始 -->
+    <!-- 底部區域 -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <div class="logo-area">
+              <img src="images/logo-small.png" alt="" />
+            </div>
+          </div>
+          <div class="col-md-9 col-sm-6">
+            <div class="about-area">
+              <dl>
+                <dt>關於我們</dt>
+                <dd><i class="bi bi-envelope-fill">teaspace@test.com</i></dd>
+                <dd>
+                  <i class="bi bi-clock-fill"></i
+                  >周一～周五工作日：10:00-17:00(訊息陸續回覆)
+                </dd>
+              </dl>
+              <dl>
+                <dt>配送方式</dt>
+                <dd>黑貓宅配</dd>
+                <dd>超商取貨</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 引入jquery -->
+    <script src="./jquery/jquery.min.js"></script>
+    <!-- 引入bootstrap.js -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- 引入共用的js -->
+    <script src="js/common.js"></script>
+    <!-- ★共用區域結束 -->
+    <!-- 引入商品詳細頁面的共用js -->
+    <script src="js/productGroup.js"></script>
+    <script>
+      // ※每個商品都有專屬的物件※
+      var obj = {
+        id: "a04",
+        title: "四季豐收壺 櫻花粉",
+        image: "upload/product/fourSeason-typeA/fourSeason-typeA-1.jpg",
+        price: 2580,
+        quantity: ini_num,
+      };
+
+      var p_title = document.querySelector(".det").querySelector("h3");
+      var p_price = document.querySelector(".det").querySelector("p");
+      p_title.innerHTML = obj.title;
+      p_price.innerHTML = "NT$" + obj.price;
+    </script>
+  </body>
+</html>

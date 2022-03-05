@@ -1,0 +1,97 @@
+.main,
+.info {
+  margin: 10px 0;
+}
+.ctrl-num {
+  height: 30px;
+  margin: 10px 0;
+}
+.minus,
+.plus {
+  float: left;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border: 1px solid #bebebe;
+  cursor: pointer;
+}
+.minus:hover,
+.plus:hover {
+  border: 1px solid #7b7b7b;
+}
+#minus,
+#plus {
+  display: inline-block;
+  padding-top: 6px;
+}
+input {
+  float: left;
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  border: 1px solid #bebebe;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+#spec-tab,
+#process-tab {
+  color: #777;
+  background-color: #EDEDED;
+}
+#detail-tab {
+  color: #fff;
+  background-color: #F59F00;
+}
+.pro_img img {
+  width: 850px;
+}
+.sepc,
+.process {
+  margin-bottom: 200px;
+}
+.tickcover {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(68, 68, 68, 0.5);
+}
+.tickarea {
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  top: 50%;
+  left: 50%;
+  margin-left: -120px;
+  padding: 0;
+}
+.disappear {
+  display: none;
+}
+
+@media (max-width: 1399.98px) {
+}
+@media (max-width: 1199.98px) { 
+  .pro_img img {
+    width: 600px;
+  }
+}
+@media (max-width: 991.98px) {
+}
+@media (max-width: 767.98px) {
+  .pro_img img {
+    width: 520px;
+  }
+}
+@media (max-width: 575.98px) {
+  .pro_img img {
+    width: 100%;
+  }
+}

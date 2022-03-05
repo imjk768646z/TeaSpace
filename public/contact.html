@@ -1,0 +1,169 @@
+<script src="/login/status"></script>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- ★共用區域開始 -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <!-- 引入bootstrap樣式 -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <!-- 引入共用的樣式 -->
+    <link rel="stylesheet" href="css/common.css" />
+    <!-- 引入bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <!-- ★共用區域結束 -->
+    <!-- 引入自定義的樣式 -->
+    <link rel="stylesheet" href="css/contact.css" />
+    <title>聯絡 | 茶空間</title>
+  </head>
+  <body>
+    <!-- ★共用區域開始 -->
+    <!-- 頭部區域 -->
+    <header class="sticky-top">
+      <div class="topbar">
+        <!-- 頂部區域 -->
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6 col-6">
+              <div class="logo">
+                <img src="images/logo.png" alt="" />
+              </div>
+            </div>
+            <div class="col-sm-3 col-6">
+              <div class="login">
+                <a href="javascript:;">
+                  <i class="bi bi-person"></i>
+                  <h6 id="loginName"></h6>
+                </a>
+              </div>
+              <div class="shopcar">
+                <a href="cart.html"><i class="bi bi-cart3"></i></a>
+                <em class="car-count">0</em>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 導航欄 -->
+      <nav class="navbar navbar-expand-sm navbar-light">
+        <div class="container-fluid topconainer">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse topnav"
+            id="navbarSupportedContent"
+          >
+            <div class="container">
+              <div class="row">
+                <ul class="navbar-nav topnav-nav">
+                  <li><a href="index.html">首頁</a></li>
+                  <li><a href="product.html">商品</a></li>
+                  <li><a href="aboutus.html">關於我們</a></li>
+                  <li><a href="contact.html">聯絡</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- ★共用區域結束 -->
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="core">
+            <div class="row">
+              <div class="col d-none d-sm-block"></div>
+              <div class="col">
+                <div class="form">
+                  <h6>姓名</h6>
+                  <input
+                    type="text"
+                    name="username"
+                    placeholder="請輸入您的姓名"
+                    autofocus
+                  />
+                  <h6>電子郵件</h6>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="請輸入您的E-mail"
+                  />
+                  <h6>聯絡電話</h6>
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder="請輸入您的聯絡電話"
+                  />
+                  <h6>訊息內容</h6>
+                  <textarea
+                    type="text"
+                    name="contact"
+                    rows="5"
+                    placeholder="請輸入您的訊息..."
+                  ></textarea>
+                  <button type="button" class="btn btn-light">送出</button>
+                </div>
+              </div>
+              <div class="col d-none d-sm-block"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- ★共用區域開始 -->
+    <!-- 底部區域 -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <div class="logo-area">
+              <img src="images/logo-small.png" alt="" />
+            </div>
+          </div>
+          <div class="col-md-9 col-sm-6">
+            <div class="about-area">
+              <dl>
+                <dt>關於我們</dt>
+                <dd><i class="bi bi-envelope-fill">teaspace@test.com</i></dd>
+                <dd>
+                  <i class="bi bi-clock-fill"></i
+                  >周一～周五工作日：10:00-17:00(訊息陸續回覆)
+                </dd>
+              </dl>
+              <dl>
+                <dt>配送方式</dt>
+                <dd>黑貓宅配</dd>
+                <dd>超商取貨</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 引入jquery -->
+    <script src="./jquery/jquery.min.js"></script>
+    <!-- 引入bootstrap.js -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- 引入共用的js -->
+    <script src="js/common.js"></script>
+    <!-- ★共用區域結束 -->
+  </body>
+</html>

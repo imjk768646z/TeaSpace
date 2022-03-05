@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif, "標楷體", "Microsoft JhengHei", "微軟正黑體"  !important;
+    /* position: relative; */
+    /* height: 3000px; */
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #9D9D9D;
+}
+i,
+em {
+    font-style: normal;
+}
+header {
+    background-color: #fff;
+}
+.topbar {
+    padding-top: 25px;
+}
+.logo img {
+    display: block;
+    margin: 0 auto;
+}
+.login i,
+.shopcar i {
+    font-size: 28px;
+    color: #9E9E00;
+}
+.login,
+.shopcar {
+    height: 28px;
+    line-height: 28px;
+    /* margin-top: 50px; */
+}
+.login {
+    width: 60%;
+    float: left;
+}
+.login h6 {
+    display: inline-block;
+    vertical-align: middle;
+}
+.shopcar {
+    position: relative;
+    float: right;
+    width: 35%;
+}
+.car-count {
+    position: absolute;
+    overflow: hidden;
+    top: 3px;
+    left: 30px;
+    height: 25px;
+    line-height: 25px;
+    padding: 0 7px;
+    font-size: 16px;
+    background-color: #FF3030;
+    border-radius: 0 7px 7px 7px;
+}
+.login i:hover,
+.shopcar i:hover,
+.login a:hover {
+    color: #D68B00;
+}
+.navbar {
+    padding-bottom: 0;
+}
+.topconainer {
+    padding: 0;
+}
+.topnav {
+    margin-top: 10px;
+    border-top: 1px solid #D68B00;
+    box-shadow: 0px 3px 3px rgba(214, 139, 0, .5);
+}
+.topnav li {
+    width: 25%;
+}
+.topnav li a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    color: #D68B00;
+    text-align: center;
+    font-size: 20px;
+}
+.topnav li a:hover {
+    color: #fff;
+    background-color:#D68B00;
+}
+.topnav-nav {
+    width: 100%;
+}
+.footer {
+    background-color:#F09C00;
+}
+.about-area {
+    margin-left: 50px;
+}
+.about-area dl {
+    float: left;
+    margin: 0 15px;
+    width: 200px;
+}
+.about-area dt {
+    color:#5E5E5E;
+    border-bottom: 1px solid #5E5E5E;
+}
+.about-area dd {
+    font-size: 15px;
+    color:#DEDEDE;
+}
+
+@media (max-width: 1399.98px) {
+}
+@media (max-width: 1199.98px) {
+}
+@media (max-width: 991.98px) {
+}
+@media (max-width: 767.98px) {
+    /* .logo-area {
+        margin-top: 20px;
+    } */
+    .topbar img {
+        width: 80%;
+    }
+}
+@media (max-width: 575.98px) {
+    .slideshow {
+        margin-top: 5px;
+    }
+    .topbar img {
+        width: 100%;
+    }
+    .logo-area {
+        text-align: center;
+    }
+    /* .login,
+    .shopcar {
+        margin-top: 18px;
+    } */
+    .login i,
+    .shopcar i {
+        font-size: 30px;
+    }
+    .topnav li a {
+        display: block;
+        color: #D68B00;
+        width: 200px;
+        line-height: 50px;
+        padding-left: 10px;
+        text-align: left;
+        font-size: 20px;
+    }
+    .topnav li a:hover {
+        color: #9D9D9D;
+        background-color:#fff;
+    }
+    
+}
